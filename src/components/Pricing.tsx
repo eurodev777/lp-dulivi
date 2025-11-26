@@ -37,7 +37,7 @@ export const Pricing = () => {
       features: [
         "Tudo do plano anterior",
         "Notas fiscais (NFC-e)",
-        <span className='text-sm text-foreground font-bold underline'>Anúncios Google/Meta</span>,
+        <span className='text-sm text-foreground font-bold underline'>Anúncios no Facebook, Instagram e Google</span>,
         "Programa de fidelidade",
         "Cashback",
         <span className='text-sm text-foreground font-bold underline'>Disparo de mensagens</span>,
