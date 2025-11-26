@@ -37,8 +37,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <section id="contact-form" className="py-20 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-2xl">
+    <section id="contact-form" className="py-20 bg-muted/30">
+      <div className="lg:container px-6 mx-auto !max-w-2xl">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Transforme seu restaurante agora
@@ -48,7 +48,7 @@ export const ContactForm = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-2xl shadow-lg border border-border">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-card lg:p-8 p-6 rounded-2xl shadow-lg border border-border">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-semibold text-foreground">
               Nome completo *
@@ -110,9 +110,9 @@ export const ContactForm = () => {
           <Button 
             type="submit" 
             size="lg" 
-            className="w-full h-14 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl"
+            className="w-full h-14 sm:text-lg text-base font-semibold bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl"
           >
-            Quero conhecer a Dulivi <Send className="ml-2 h-5 w-5" />
+            Quero conhecer a Dulivi <Send className="sm:ml-2 h-5 w-5" />
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">

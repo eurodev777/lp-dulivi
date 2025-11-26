@@ -18,7 +18,7 @@ export const Results = () => {
   ];
 
   return (
-    <section id="resultados" className="py-24 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="resultados" className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
