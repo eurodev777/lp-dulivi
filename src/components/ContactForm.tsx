@@ -44,7 +44,7 @@ export const ContactForm = () => {
             Transforme seu restaurante agora
           </h2>
           <p className="text-lg text-muted-foreground">
-            Fale com nossos especialistas e descubra como a Brendi pode revolucionar seu negócio
+            Fale com nossos especialistas e descubra como a Dulivi pode revolucionar seu negócio
           </p>
         </div>
 
@@ -112,11 +112,11 @@ export const ContactForm = () => {
             size="lg" 
             className="w-full h-14 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl"
           >
-            Quero conhecer a Brendi <Send className="ml-2 h-5 w-5" />
+            Quero conhecer a Dulivi <Send className="ml-2 h-5 w-5" />
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">
-            Ao enviar, você concorda em receber comunicações da Brendi
+            Ao enviar, você concorda em receber comunicações da Dulivi
           </p>
         </form>
       </div>

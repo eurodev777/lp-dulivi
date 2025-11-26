@@ -20,24 +20,24 @@ export const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-lg">Produto</h4>
+            <h4 className="font-semibold mb-4 text-lg">Funcionalidades</h4>
             <ul className="space-y-3 text-secondary-foreground/80">
-              <li><a href="#" className="hover:text-primary transition-colors">Atendimento com IA</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Tráfego Pago</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Disparos</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cardápio Digital</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Relatórios</a></li>
+              <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Atendimento com IA</a></li>
+              <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Tráfego Pago</a></li>
+              <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Disparos</a></li>
+              <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Cardápio Digital</a></li>
+              <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Relatórios</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4 text-lg">Empresa</h4>
             <ul className="space-y-3 text-secondary-foreground/80">
-              <li><a href="#" className="hover:text-primary transition-colors">Sobre Nós</a></li>
+              <li><a href="#resultados" className="hover:text-primary transition-colors">Sobre Nós</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Cases de Sucesso</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li>
+              <li><a href="#contact-form" className="hover:text-primary transition-colors">Contato</a></li>
             </ul>
           </div>
         </div>

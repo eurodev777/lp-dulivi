@@ -56,7 +56,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-background">
+    <section id="funcionalidades" className="py-24 px-4 bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -101,7 +101,7 @@ export const Features = () => {
                   variant="ghost" 
                   className="text-primary hover:text-primary hover:bg-primary/10 w-full"
                 >
-                  Saiba mais →
+                  Teste grátis →
                 </Button>
               </div>
             );

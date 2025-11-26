@@ -9,10 +9,12 @@ export const Pricing = () => {
       description: "Pequenas lojas",
       features: [
         "Cardápio digital",
-        "Painel de pedidos",
-        "Pix",
-        "Controle básico"
-      ]
+        "CRM (gerenciamento de pedidos)",
+        "Pagamento Online (Rápido e Seguro)",
+        "Controle básico",
+        "Sem limite de pedidos",
+        "Suporte todos os dias, inclusive feriados e finais de semana",
+      ],
     },
     {
       name: "Pro",
@@ -20,31 +22,34 @@ export const Pricing = () => {
       description: "Lojas com delivery e automações",
       features: [
         "Tudo do plano anterior",
-        "WhatsApp bot",
-        "Impressora automática",
-        "Relatórios",
-        "Cupons",
-        "Taxas de entrega por bairro"
+        "Robô com IA para Whatsapp",
+        "Relatórios de  vendas",
+        "Cupons de desconto",
+        "Taxas de entrega por bairro",
+        "Agendamento de Pedidos"
       ],
-      popular: true
+      popular: true,
     },
     {
       name: "Turbo",
-      price: "R$ 169,90",
+      price: "R$ 249,90",
       description: "Restaurantes maiores com anúncios e NF",
       features: [
         "Tudo do plano anterior",
         "Notas fiscais (NFC-e)",
-        "Anúncios Google/Meta",
+        <span className='text-sm text-foreground font-bold underline'>Anúncios Google/Meta</span>,
         "Programa de fidelidade",
-        "CRM completo",
-        "Disparo de mensagens"
-      ]
-    }
+        "Cashback",
+        <span className='text-sm text-foreground font-bold underline'>Disparo de mensagens</span>,
+        "Recuperador de Vendas"
+      ],
+    },
   ];
 
   const scrollToForm = () => {
-    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+    document
+      .getElementById("contact-form")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -64,9 +69,9 @@ export const Pricing = () => {
             <div
               key={index}
               className={`relative p-8 bg-card rounded-2xl border transition-all duration-300 animate-slide-up hover:shadow-xl ${
-                plan.popular 
-                  ? 'border-primary shadow-lg scale-105' 
-                  : 'border-border hover:border-primary/40'
+                plan.popular
+                  ? "border-primary shadow-lg scale-105"
+                  : "border-border hover:border-primary/40"
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -79,10 +84,16 @@ export const Pricing = () => {
               )}
 
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">{plan.name}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{plan.description}</p>
+                <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  {plan.name}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {plan.description}
+                </p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-foreground">{plan.price}</span>
+                  <span className="text-4xl font-bold text-foreground">
+                    {plan.price}
+                  </span>
                   <span className="text-muted-foreground">/mês</span>
                 </div>
               </div>
@@ -96,12 +107,12 @@ export const Pricing = () => {
                 ))}
               </ul>
 
-              <Button 
+              <Button
                 onClick={scrollToForm}
                 className={`w-full ${
-                  plan.popular 
-                    ? 'bg-primary hover:bg-primary/90' 
-                    : 'bg-secondary hover:bg-secondary/80'
+                  plan.popular
+                    ? "bg-primary hover:bg-primary/90"
+                    : "bg-secondary hover:bg-secondary/80"
                 }`}
               >
                 Começar Agora

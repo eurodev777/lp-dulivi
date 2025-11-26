@@ -38,7 +38,7 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground mb-4">Sistema Completo para seu Delivery e Restaurante</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative">
+            <span className="block text-primary bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative">
               <span 
                 key={currentIndex}
                 className="absolute inset-0 animate-text-rotate"
@@ -69,18 +69,18 @@ export const Hero = () => {
             </Button>
           </div>
           
-          <div className="pt-8 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground">
+          <div className="pt-8 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground font-semibold">
             <div className="flex items-center gap-2">
               <span className="text-2xl">✅</span>
-              <span>Sem instalação</span>
+              <span className="">Sem instalação</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">⚡</span>
-              <span>Ativo em 24h</span>
+              <span className="">Ativo em 24h</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎯</span>
-              <span>Suporte dedicado</span>
+              <span className="">Suporte dedicado</span>
             </div>
           </div>
         </div>
