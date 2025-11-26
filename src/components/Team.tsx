@@ -59,11 +59,10 @@ export default function Team({
             </span>
             <div
               style={{
-                marginTop: "1.5em",
                 width: "80px",
                 height: "4px",
                 background: "linear-gradient(90deg, #1D84FF, #114B99)",
-                margin: "0 0 2.5rem",
+                margin: "1.5em 0 2.5rem",
                 borderRadius: "2px",
                 position: "relative",
                 overflow: "hidden",
