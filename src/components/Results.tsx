@@ -2,12 +2,12 @@ export const Results = () => {
   const stats = [
     {
       number: "+600 milhões",
-      label: "faturados por restaurantes Brendi",
+      label: "faturados por restaurantes Dulivi",
       icon: "💰"
     },
     {
       number: "+5.000 clientes",
-      label: "apaixonados pela Brendi em todo o Brasil ❤️",
+      label: "apaixonados pela Dulivi em todo o Brasil ❤️",
       icon: "🎉"
     },
     {
