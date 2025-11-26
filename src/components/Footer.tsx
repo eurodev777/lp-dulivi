@@ -7,9 +7,9 @@ export const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Brendi</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Dulivi</h3>
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed">
-              A assistente de IA que revoluciona a forma como restaurantes fazem delivery. 
+              Cardápio Digital para Delivery - Sistema completo que revoluciona a gestão do seu restaurante. 
               Mais vendas, menos operacional, mais tempo para você.
             </p>
             <Button 
@@ -45,7 +45,7 @@ export const Footer = () => {
         <div className="border-t border-secondary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-secondary-foreground/60">
-              © 2024 Brendi. Todos os direitos reservados.
+              © 2024 Dulivi. Todos os direitos reservados.
             </p>
             
             <div className="flex gap-4">

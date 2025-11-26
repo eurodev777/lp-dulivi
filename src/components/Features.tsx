@@ -60,7 +60,7 @@ export const Features = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Como a Brendi pode ajudar o seu negócio?
+            Como a Dulivi pode ajudar o seu negócio?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Conheça as funcionalidades que vão transformar o seu delivery e a sua vida.
