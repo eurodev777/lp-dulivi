@@ -25,7 +25,7 @@ export const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section id="beneficios" className="py-24 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
