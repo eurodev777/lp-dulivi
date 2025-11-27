@@ -5,8 +5,8 @@ export default function Team({
   imageAlt = "Equipe Dulivi",
 }) {
   return (
-    <section id="team" className="bg-muted/30">
-      <div className="container max-w-6xl mx-auto p-6 flex flex-col lg:flex-row gap-8 items-start">
+    <section id="team" className="bg-muted/30 py-20">
+      <div className="container max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-8 items-start">
         {/* Imagem da equipe */}
         <div className="w-full lg:w-2/4 flex-shrink-0 lg:order-first order-last">
           <div className="relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-inner">
@@ -54,7 +54,7 @@ export default function Team({
                 Nossa Missão
               </span>
             </div>
-            <span className="lg:text-6xl text-2xl font-bold text-zinc-700">
+            <span className="lg:text-6xl text-3xl font-bold text-zinc-700">
               Por que existimos?
             </span>
             <div
