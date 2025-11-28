@@ -5,7 +5,7 @@ export default function Team({
   imageAlt = "Equipe Dulivi",
 }) {
   return (
-    <section id="team" className="bg-muted/30 py-20">
+    <section id="dulivi" className="bg-muted/30 py-20">
       <div className="container max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-8 items-start">
         {/* Imagem da equipe */}
         <div className="w-full lg:w-2/4 flex-shrink-0 lg:order-first order-last">

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import SvgLogo from '../components/svg/SvgLogo'
 import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
 
 export const Footer = () => {
@@ -7,7 +8,10 @@ export const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Dulivi</h3>
+            <div className="flex items-center gap-1.5 mb-4">
+              <SvgLogo width={24} height={24} />
+              <h3 className="text-2xl font-bold text-primary mb-1">Dulivi</h3>
+            </div>
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed">
               Cardápio Digital para Delivery - Sistema completo que revoluciona a gestão do seu restaurante. 
               Mais vendas, menos operacional, mais tempo para você.
@@ -33,7 +37,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Empresa</h4>
             <ul className="space-y-3 text-secondary-foreground/80">
-              <li><a href="#team" className="hover:text-primary transition-colors">Sobre Nós</a></li>
+              <li><a href="#dulivi" className="hover:text-primary transition-colors">Sobre Nós</a></li>
               <li><a href="#beneficios" className="hover:text-primary transition-colors">Benefícios</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li>
@@ -45,7 +49,7 @@ export const Footer = () => {
         <div className="border-t border-secondary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-secondary-foreground/60">
-              © 2024 Dulivi. Todos os direitos reservados.
+              © 2025 Dulivi. Todos os direitos reservados.
             </p>
             
             <div className="flex gap-4">

@@ -58,9 +58,9 @@ export const Features = () => {
   return (
     <section id="funcionalidades" className="py-24 bg-background">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Como a Dulivi pode ajudar o seu negócio?
+            Como a Dulivi pode ajudar o seu negócio<span className='text-[#1d84ff]'>?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Conheça as funcionalidades que vão transformar o seu delivery e a sua vida.

@@ -53,7 +53,7 @@ export const Pricing = () => {
   };
 
   return (
-    <section className="py-24 bg-background">
+    <section id="planos" className="py-24 bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">

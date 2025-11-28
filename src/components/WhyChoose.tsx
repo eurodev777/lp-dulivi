@@ -29,7 +29,7 @@ export const WhyChoose = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Por que escolher a Dulivi?
+            Por que escolher a <span className='text-[#1d84ff]'>Dulivi</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Oferecemos tudo que você precisa para automatizar o seu negócio digital
