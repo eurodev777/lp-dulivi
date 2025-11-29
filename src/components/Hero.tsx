@@ -37,7 +37,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="block text-foreground md:mb-6 mb-4">Sistema Completo para seu Delivery e Restaurante</span>
+            <span className="block text-foreground md:mb-8 mb-4">Sistema Completo para seu Delivery e Restaurante</span>
             <span className="block text-primary bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative">
               <span 
                 key={currentIndex}
