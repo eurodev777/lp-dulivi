@@ -6,11 +6,12 @@ import { Features } from "@/components/Features";
 import { WhyChoose } from "@/components/WhyChoose";
 import { Footer } from "@/components/Footer";
 import Team from "@/components/Team";
+import WhatsApp from "@/components/WhatsApp";
 import HeaderMenu from "@/components/HeaderMenu";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
       <HeaderMenu />
       <Hero />
       <Results />
@@ -20,6 +21,7 @@ const Index = () => {
       <Team />
       <ContactForm />
       <Footer />
+      <WhatsApp />
     </main>
   );
 };

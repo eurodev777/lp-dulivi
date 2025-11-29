@@ -37,18 +37,18 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="block text-foreground mb-4">Sistema Completo para seu Delivery e Restaurante</span>
+            <span className="block text-foreground md:mb-6 mb-4">Sistema Completo para seu Delivery e Restaurante</span>
             <span className="block text-primary bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative">
               <span 
                 key={currentIndex}
-                className="absolute inset-0 animate-text-rotate"
+                className="absolute inset-0 animate-text-rotate leading-[33px]"
               >
                 {rotatingTexts[currentIndex]}
               </span>
             </span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:pt-0 pt-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Tudo isso e muito mais em um só lugar!
           </p>
           
