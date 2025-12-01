@@ -1,9 +1,6 @@
 [build]
-  command = "pnpm build"
+  command = "pnpm install --shamefully-hoist && pnpm build"
   publish = "dist"
 
 [build.environment]
   NPM_FLAGS = "--legacy-peer-deps"
-
-[build]
-  command = "pnpm install --shamefully-hoist && pnpm build"
