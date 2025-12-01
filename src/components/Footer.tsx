@@ -27,11 +27,11 @@ export const Footer = () => {
   return (
     <footer className="bg-[#1A1C20] text-[#fff] py-16 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-12 gap-12 mb-12">
-          <div className="md:col-span-7">
+        <div className="grid lg:grid-cols-12 gap-12 mb-12">
+          <div className="lg:col-span-7">
             <div className="flex items-center gap-1.5 mb-4">
-              <SvgLogo width={24} height={24} />
-              <h3 className="text-2xl font-bold text-primary mb-1">Dulivi</h3>
+              <SvgLogo width={28} height={28} />
+              <h3 className="text-3xl font-bold text-primary mb-1">Dulivi</h3>
             </div>
             <p className="text-[#fff]/80 mb-6 leading-relaxed">
               Cardápio Digital para Delivery - Sistema completo que revoluciona
@@ -60,7 +60,7 @@ export const Footer = () => {
             </ul>
           </div> */}
 
-          <div className="md:col-span-2">
+          <div className="lg:col-span-2">
             <h4 className="font-semibold mb-4 text-xl">Empresa</h4>
             <ul className="space-y-3 text-[#fff]/80">
               <li>
@@ -106,7 +106,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="lg:col-span-3">
             <h4 className="font-semibold mb-8 text-xl">Fale com a gente</h4>
             <ul className="space-y-8 text-[#fff]/80 text-lg">
               <li
@@ -129,7 +129,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
             <p className="text-sm text-[#fff]/60">
               © 2025 Dulivi. Todos os direitos reservados.
             </p>
