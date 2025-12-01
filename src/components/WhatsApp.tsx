@@ -1,8 +1,8 @@
-import SvgWhatsApp from "./svg/SvgWhatsApp"
+import SvgWhatsApp from "./svg/SvgWhatsApp";
 
 export default function WhatsApp() {
   return (
-    <div className="fixed bottom-6 right-6">
+    <div className="fixed bottom-6 right-6 z-[9999]">
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=5513991027026&text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+saber+mais+sobre+a+Dulivi&type=phone_number&app_absent=0"

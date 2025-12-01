@@ -25,7 +25,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1A1C20] text-[#fff] py-16 px-4">
+    <footer className="bg-[#1A1C20] text-[#fff] py-16">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-12 gap-12 mb-12">
           <div className="lg:col-span-7">
@@ -41,7 +41,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=5513991027026&text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+saber+mais+sobre+a+Dulivi&type=phone_number&app_absent=0"
-              className="flex items-center gap-3 font-medium bg-[#14C65C] text-white px-6 py-3 rounded-xl w-fit shadow-lg 
+              className="flex items-center gap-3 font-medium bg-[#14C65C] lg:text-base text-sm text-white px-6 py-3 rounded-xl w-fit shadow-lg 
          transition-transform duration-300 ease-out hover:scale-110 hover:shadow-[0_10px_20px_rgba(20,198,92,0.4)]"
             >
               Fale conosco via WhatsApp
