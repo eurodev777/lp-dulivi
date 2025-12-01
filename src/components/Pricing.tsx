@@ -56,7 +56,7 @@ export const Pricing = () => {
     <section id="planos" className="py-24 bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Escolha o plano ideal para o seu negócio
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}

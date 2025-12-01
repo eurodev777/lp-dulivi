@@ -10,8 +10,8 @@ export const Features = () => {
       items: [
         "Respostas imediatas",
         "Personalização avançada",
-        "Integração com WhatsApp"
-      ]
+        "Integração com WhatsApp",
+      ],
     },
     {
       icon: Target,
@@ -20,8 +20,8 @@ export const Features = () => {
       items: [
         "Automação completa",
         "Campanhas otimizadas",
-        "Monitoramento em tempo real"
-      ]
+        "Monitoramento em tempo real",
+      ],
     },
     {
       icon: Send,
@@ -30,8 +30,8 @@ export const Features = () => {
       items: [
         "Segmentação avançada",
         "Mensagens personalizadas",
-        "Análise de resultados"
-      ]
+        "Análise de resultados",
+      ],
     },
     {
       icon: Menu,
@@ -40,8 +40,8 @@ export const Features = () => {
       items: [
         "Interface moderna",
         "Carregamento rápido",
-        "Experiência otimizada"
-      ]
+        "Experiência otimizada",
+      ],
     },
     {
       icon: BarChart3,
@@ -50,9 +50,9 @@ export const Features = () => {
       items: [
         "Dashboard intuitivo",
         "Métricas em tempo real",
-        "Relatórios detalhados"
-      ]
-    }
+        "Relatórios detalhados",
+      ],
+    },
   ];
 
   return (
@@ -60,10 +60,12 @@ export const Features = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Como a Dulivi pode ajudar o seu negócio<span className='text-[#1d84ff]'>?</span>
+            Como a Dulivi pode ajudar o seu negócio
+            <span className="text-[#1d84ff]">?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conheça as funcionalidades que vão transformar o seu delivery e a sua vida.
+            Conheça as funcionalidades que vão transformar o seu delivery e a
+            sua vida.
           </p>
         </div>
 
@@ -79,15 +81,15 @@ export const Features = () => {
                 <div className="inline-flex p-4 rounded-xl bg-primary/10 text-primary mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="h-8 w-8" />
                 </div>
-                
+
                 <h3 className="text-2xl font-bold mb-3 text-foreground">
                   {feature.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-6">
                   {feature.description}
                 </p>
-                
+
                 <ul className="space-y-3 mb-6">
                   {feature.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
@@ -97,8 +99,12 @@ export const Features = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  variant="ghost" 
+                <Button
+                  onClick={() => {
+                    const el = document.getElementById("contact-form");
+                    el?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  variant="ghost"
                   className="text-primary hover:text-primary hover:bg-primary/10 w-full"
                 >
                   Teste grátis →

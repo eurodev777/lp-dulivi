@@ -20,6 +20,10 @@ export const Footer = () => {
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
   };
 
+  const scrollToForm = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-[#1A1C20] text-[#fff] py-16 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -61,34 +65,40 @@ export const Footer = () => {
             <ul className="space-y-3 text-[#fff]/80">
               <li>
                 <a
-                  href="#dulivi"
-                  className="hover:text-primary transition-colors"
+                  onClick={() => {
+                    scrollToForm("dulivi");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
                 >
                   Sobre Nós
                 </a>
               </li>
               <li>
                 <a
-                  href="#beneficios"
-                  className="hover:text-primary transition-colors"
+                  onClick={() => {
+                    scrollToForm("beneficios");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
                 >
                   Benefícios
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a
+                  onClick={() => {
+                    scrollToForm("inicio");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Carreiras
-                </a>
-              </li>
-              <li>
                 <a
-                  href="#contact-form"
-                  className="hover:text-primary transition-colors"
+                  onClick={() => {
+                    scrollToForm("contact-form");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
                 >
                   Contato
                 </a>
@@ -112,9 +122,7 @@ export const Footer = () => {
                 className="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors"
               >
                 <MapPin size={23} />
-                <span>
-                  Santos, SP
-                </span>
+                <span>Santos, SP</span>
               </a>
             </ul>
           </div>

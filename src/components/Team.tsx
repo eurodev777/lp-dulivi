@@ -4,6 +4,12 @@ export default function Team({
   imageSrc = "/TeamDuliviMadri.png",
   imageAlt = "Equipe Dulivi",
 }) {
+  const scrollToForm = () => {
+    document
+      .getElementById("funcionalidades")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="dulivi" className="bg-muted/30 py-20">
       <div className="container max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-8 items-start">
@@ -129,8 +135,8 @@ export default function Team({
           {/* CTA, opcional */}
           <div className="mt-4">
             <a
-              href="#funcionalidades"
-              className="inline-block text-sm font-medium underline"
+              onClick={scrollToForm}
+              className="inline-block text-sm font-medium underline cursor-pointer"
             >
               Ver funcionalidades
             </a>

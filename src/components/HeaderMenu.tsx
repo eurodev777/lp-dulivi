@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import SvgLogo from "./svg/SvgLogo";
+import { UserRound } from "lucide-react";
 
 export default function HeaderMenu() {
   const [hidden, setHidden] = useState(false);
@@ -42,34 +43,65 @@ export default function HeaderMenu() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScroll]);
 
+  function scrollIntoView(id) {
+    const el = document.getElementById(`${id}`);
+    el?.scrollIntoView({ behavior: "smooth" });
+    setOpenMenu(false)
+  }
+
   return (
     <div
       className={`fixed top-0 left-0 backdrop-blur-md backdrop-saturate-100 bg-white/70 w-full z-50 transition-transform duration-300
         ${hidden ? "-translate-y-full" : "translate-y-0"}`}
     >
       {/* DESKTOP */}
-      <header className="md:flex items-center justify-around py-3 hidden">
-        <a href="/" className="flex items-center gap-1.5">
-          <SvgLogo width={24} height={24} />
-          <h3 className="text-2xl font-bold text-primary mb-1">Dulivi</h3>
+      <header className="lg:flex items-center justify-around py-3 hidden">
+        <a href="/" className="flex items-center gap-1.5 min-w-[210px]">
+          <SvgLogo width={28} height={28} />
+          <h3 className="text-3xl font-bold text-primary mb-1">Dulivi</h3>
         </a>
         <nav className="flex items-center">
           <ul className="flex items-center gap-4 font-medium">
-            <li><a href="/">Início</a></li>
-            <li><a href="#funcionalidades">Funcionalidades</a></li>
-            <li><a href="#planos">Planos</a></li>
-            <li><a href="#dulivi">Sobre nós</a></li>
-            <li><a href="">Blog</a></li>
+            <li>
+              <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">Início</a>
+            </li>
+            <li>
+              <a onClick={() => scrollIntoView('funcionalidades')} className="cursor-pointer">Funcionalidades</a>
+            </li>
+            <li>
+              <a onClick={() => scrollIntoView('planos')} className="cursor-pointer">Planos</a>
+            </li>
+            <li>
+              <a onClick={() => scrollIntoView('dulivi')} className="cursor-pointer">Sobre nós</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
           </ul>
         </nav>
-        <aside className="flex items-center gap-8">
-          <a href="https://painel-dulivi.netlify.app/" target="_blank" className="text-[#1d84ff] text-sm">Acessar</a>
-          <a href="#contact-form" className="bg-[#1d84ff] px-4 py-2 rounded-md text-white text-sm">Quero testar</a>
+        <aside className="flex items-center gap-3">
+          <a
+            onClick={() => scrollIntoView('contact-form')}
+            className="bg-[#1d84ff] px-4 py-2 rounded-md text-white font-semibold text-sm relative overflow-hidden cursor-pointer"
+          >
+            Teste Grátis
+            <span className="absolute top-[-1px] right-[-1px] text-[11px] leading-3 text-black bg-white/80 px-1.5 rounded-[2px] montserrat">
+              15 dias
+            </span>
+          </a>
+          <a
+            href="https://painel-dulivi.netlify.app/"
+            target="_blank"
+            className="px-4 py-1.5 rounded-md font-semibold text-black flex items-center gap-1 border-[1px] border-border"
+          >
+            <UserRound size={16} strokeWidth={3} />
+            Login
+          </a>
         </aside>
       </header>
 
       {/* MOBILE */}
-      <header className="md:hidden flex flex-col">
+      <header className="lg:hidden flex flex-col">
         {/* TOP BAR MOBILE */}
         <div className="flex items-center justify-between px-4 py-4">
           <a href="/" className="flex items-center gap-1.5">
@@ -97,17 +129,53 @@ export default function HeaderMenu() {
         >
           <nav className="flex items-center justify-center py-4">
             <ul className="flex flex-col items-center gap-3 font-medium">
-              <li><a href="/" onClick={() => setOpenMenu(false)}>Início</a></li>
-              <li><a href="#funcionalidades" onClick={() => setOpenMenu(false)}>Funcionalidades</a></li>
-              <li><a href="#planos" onClick={() => setOpenMenu(false)}>Planos</a></li>
-              <li><a href="#dulivi" onClick={() => setOpenMenu(false)}>Sobre nós</a></li>
-              <li><a href="" onClick={() => setOpenMenu(false)}>Blog</a></li>
+              <li>
+                <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a onClick={() => scrollIntoView('funcionalidades')} className="cursor-pointer">
+                  Funcionalidades
+                </a>
+              </li>
+              <li>
+                <a onClick={() => scrollIntoView('planos')} className="cursor-pointer">
+                  Planos
+                </a>
+              </li>
+              <li>
+                <a onClick={() => scrollIntoView('dulivi')} className="cursor-pointer">
+                  Sobre nós
+                </a>
+              </li>
+              <li>
+                <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">
+                  Blog
+                </a>
+              </li>
             </ul>
           </nav>
 
-          <aside className="flex flex-col items-center gap-4 pb-4">
-            <a href="https://painel-dulivi.netlify.app/" target="_blank" onClick={() => setOpenMenu(false)} className="text-[#1d84ff] text-sm">Acessar</a>
-            <a href="#contact-form" onClick={() => setOpenMenu(false)} className="bg-[#1d84ff] px-4 py-2 rounded-md text-white text-sm">Quero testar</a>
+          <aside className="flex flex-col items-center gap-4 pb-4 px-6 text-center">
+            <a
+              onClick={() => scrollIntoView('contact-form')}
+              className="bg-[#1d84ff] cursor-pointer px-4 py-2 rounded-md text-white font-semibold text-sm relative overflow-hidden w-full"
+            >
+              Teste Grátis
+              <span className="absolute top-[-2px] right-[-2px] text-[11px] leading-3 text-black bg-white/80 py-0.5 px-1.5 rounded-[4px] montserrat">
+                15 dias
+              </span>
+            </a>
+            <a
+              href="https://painel-dulivi.netlify.app/"
+              target="_blank"
+              onClick={() => setOpenMenu(false)}
+              className="px-4 py-1.5 rounded-md font-semibold text-black flex items-center justify-center gap-1 border-[1px] border-border w-full"
+            >
+              <UserRound size={16} strokeWidth={3} />
+              Login
+            </a>
           </aside>
         </div>
       </header>
