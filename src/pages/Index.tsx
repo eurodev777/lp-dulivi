@@ -14,10 +14,10 @@ const Index = () => {
     <main className="min-h-screen relative">
       <HeaderMenu />
       <Hero />
+      <WhyChoose />
       <Results />
       <Features />
       <Pricing />
-      <WhyChoose />
       <Team />
       <ContactForm />
       <Footer />
