@@ -71,10 +71,7 @@ export const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() =>
-                window.open(
-                  "https://menu.dulivi.com.br/caldinho-da-ashley",
-                  "_blank"
-                )
+                window.open("https://menu.dulivi.com.br/mim-burguer", "_blank")
               }
               className="border-2 border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg font-semibold rounded-xl"
             >
