@@ -46,7 +46,7 @@ export default function HeaderMenu() {
   function scrollIntoView(id) {
     const el = document.getElementById(`${id}`);
     el?.scrollIntoView({ behavior: "smooth" });
-    setOpenMenu(false)
+    setOpenMenu(false);
   }
 
   return (
@@ -63,16 +63,36 @@ export default function HeaderMenu() {
         <nav className="flex items-center">
           <ul className="flex items-center gap-4 font-medium">
             <li>
-              <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">Início</a>
+              <a
+                onClick={() => scrollIntoView("inicio")}
+                className="cursor-pointer"
+              >
+                Início
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollIntoView('funcionalidades')} className="cursor-pointer">Funcionalidades</a>
+              <a
+                onClick={() => scrollIntoView("funcionalidades")}
+                className="cursor-pointer"
+              >
+                Funcionalidades
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollIntoView('planos')} className="cursor-pointer">Planos</a>
+              <a
+                onClick={() => scrollIntoView("planos")}
+                className="cursor-pointer"
+              >
+                Planos
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollIntoView('dulivi')} className="cursor-pointer">Sobre nós</a>
+              <a
+                onClick={() => scrollIntoView("dulivi")}
+                className="cursor-pointer"
+              >
+                Sobre nós
+              </a>
             </li>
             <li>
               <a href="">Blog</a>
@@ -81,7 +101,7 @@ export default function HeaderMenu() {
         </nav>
         <aside className="flex items-center gap-3">
           <a
-            onClick={() => scrollIntoView('contact-form')}
+            onClick={() => scrollIntoView("contact-form")}
             className="bg-[#1d84ff] px-4 py-2 rounded-md text-white font-semibold text-sm relative overflow-hidden cursor-pointer"
           >
             Teste Grátis
@@ -90,7 +110,7 @@ export default function HeaderMenu() {
             </span>
           </a>
           <a
-            href="https://painel-dulivi.netlify.app/"
+            href="https://painel.dulivi.com.br"
             target="_blank"
             className="px-4 py-1.5 rounded-md font-semibold text-black flex items-center gap-1 border-[1px] border-border"
           >
@@ -130,27 +150,42 @@ export default function HeaderMenu() {
           <nav className="flex items-center justify-center py-4">
             <ul className="flex flex-col items-center gap-3 font-medium">
               <li>
-                <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">
+                <a
+                  onClick={() => scrollIntoView("inicio")}
+                  className="cursor-pointer"
+                >
                   Início
                 </a>
               </li>
               <li>
-                <a onClick={() => scrollIntoView('funcionalidades')} className="cursor-pointer">
+                <a
+                  onClick={() => scrollIntoView("funcionalidades")}
+                  className="cursor-pointer"
+                >
                   Funcionalidades
                 </a>
               </li>
               <li>
-                <a onClick={() => scrollIntoView('planos')} className="cursor-pointer">
+                <a
+                  onClick={() => scrollIntoView("planos")}
+                  className="cursor-pointer"
+                >
                   Planos
                 </a>
               </li>
               <li>
-                <a onClick={() => scrollIntoView('dulivi')} className="cursor-pointer">
+                <a
+                  onClick={() => scrollIntoView("dulivi")}
+                  className="cursor-pointer"
+                >
                   Sobre nós
                 </a>
               </li>
               <li>
-                <a onClick={() => scrollIntoView('inicio')} className="cursor-pointer">
+                <a
+                  onClick={() => scrollIntoView("inicio")}
+                  className="cursor-pointer"
+                >
                   Blog
                 </a>
               </li>
@@ -159,7 +194,7 @@ export default function HeaderMenu() {
 
           <aside className="flex flex-col items-center gap-4 pb-4 px-6 text-center">
             <a
-              onClick={() => scrollIntoView('contact-form')}
+              onClick={() => scrollIntoView("contact-form")}
               className="bg-[#1d84ff] cursor-pointer px-4 py-2 rounded-md text-white font-semibold text-sm relative overflow-hidden w-full"
             >
               Teste Grátis
@@ -168,7 +203,7 @@ export default function HeaderMenu() {
               </span>
             </a>
             <a
-              href="https://painel-dulivi.netlify.app/"
+              href="https://painel.dulivi.com.br"
               target="_blank"
               onClick={() => setOpenMenu(false)}
               className="px-4 py-1.5 rounded-md font-semibold text-black flex items-center justify-center gap-1 border-[1px] border-border w-full"

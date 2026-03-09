@@ -72,7 +72,7 @@ export const Hero = () => {
               variant="outline"
               onClick={() =>
                 window.open(
-                  "https://menu-dulivi.netlify.app/caldinho-da-ashley",
+                  "https://menu.dulivi.com.br/caldinho-da-ashley",
                   "_blank"
                 )
               }

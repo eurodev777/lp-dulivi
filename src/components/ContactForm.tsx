@@ -40,7 +40,7 @@ export const ContactForm = () => {
       setFormData({ name: "", email: "", password: "", phone: "", cpf: "" });
 
       // Redirect only on success
-      window.location.href = "https://painel-dulivi.netlify.app/";
+      window.location.href = "https://painel.dulivi.com.br/";
     } catch (err) {
       toast({
         title: "Erro ao criar loja!",
