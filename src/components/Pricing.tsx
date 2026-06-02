@@ -5,7 +5,7 @@ export const Pricing = () => {
 	const plans = [
 		{
 			name: 'Start',
-			price: 'R$ 79,90',
+			price: 'R$ 89,90',
 			description: 'Pequenas lojas',
 			features: [
 				'Cardápio digital',
