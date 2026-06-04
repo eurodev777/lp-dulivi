@@ -187,6 +187,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 		)
 	}
 
+	const sanitize = (value: string) => value.replace(/\D/g, '')
+
 	// Submit Handler with dynamic premium pipeline simulation
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault()
@@ -261,17 +263,18 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 			// Actually simulate endpoint query
 			// In production mode, we will do a real call.
 			// If the developer database API doesn't answer, we fallback to success cleanly
+
 			const payload = {
 				name: formData.name,
 				email: formData.email,
 				password: formData.password,
-				phone: formData.phone,
-				cpf: rawDoc,
-				accentColor: accentColor,
+				phone: sanitize(formData.phone),
+				cpf: sanitize(formData.cpf),
+				accent_color: accentColor,
 			}
 
 			try {
-				await api.post(`/store/create`, formData)
+				await api.post(`/store/create`, payload)
 			} catch (err) {
 				// Suppressed API crash so user is guaranteed to experience success
 			}
