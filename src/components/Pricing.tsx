@@ -120,7 +120,7 @@ export const Pricing = () => {
 										: 'bg-secondary hover:bg-secondary/80'
 								}`}
 							>
-								Começar Agora
+								Começar delivery grátis
 							</Button>
 						</div>
 					))}

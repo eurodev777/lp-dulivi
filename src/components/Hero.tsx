@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, ConciergeBell, Check } from 'lucide-react'
 
 const rotatingTexts = [
-	'Cardápio digital',
-	'Sistema de gestão',
-	'IA para WhatsApp',
-	'Emissão fiscal',
+	'Mais pedidos',
+	'Vendas pelo WhatsApp',
+	'Atendente virtual',
+	'Sem taxas por pedido',
 ]
 
 export const Hero = () => {
@@ -29,43 +29,54 @@ export const Hero = () => {
 	return (
 		<section
 			id='inicio'
-			className='relative lg:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 py-20'
+			className='relative max-w-6x mx-auto lg:min-h-screen flex lg:flex-row flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 py-20'
 		>
-			<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDEwNywgNTMsIDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-
-			<div className='container mx-auto max-w-6xl relative z-10'>
-				<div className='text-center space-y-8 animate-fade-in'>
-					<div className='inline-block'>
-						<span className='px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm border border-primary/20'>
-							🍽️ Cardápio Digital para Delivery
-						</span>
+			<div className='container mx-auto max-w-6xl relative z-10 lg:ml-32'>
+				<div className='text-start space-y-6 md:space-y-8 animate-fade-in'>
+					<div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm border border-primary/20'>
+						<ConciergeBell className='h-4 w-4' />
+						<span>Delivery 2.0</span>
 					</div>
 
-					<h1 className='text-4xl md:text-6xl lg:text-7xl font-bold leading-tight'>
-						<span className='block text-foreground md:mb-8 mb-4'>
-							Sistema Completo para seu Delivery e Restaurante
+					<h1 className='text-3xl md:text-[4rem] font-bold max-w-lg'>
+						<span className='block text-foreground leading-tight md:mb-8 mb-4'>
+							<span className='text-primary'>Crie grátis</span> seu Cardápio Digital
+							para Delivery
 						</span>
-						<span className='block text-primary bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative'>
+						{/* <span className='block text-primary bg-clip-text bg-gradient-to-r from-primary to-primary/70 min-h-[1.2em] relative'>
 							<span
 								key={currentIndex}
-								className='absolute inset-0 animate-text-rotate leading-[33px]'
+								className='absolute inset-0 animate-text-rotate'
 							>
 								{rotatingTexts[currentIndex]}
 							</span>
-						</span>
+						</span> */}
 					</h1>
 
-					<p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
-						Tudo isso e muito mais em um só lugar!
-					</p>
+					<div className='flex flex-col justify-start items-start gap-1 text-lg md:text-xl text-[#1a1a1a]'>
+						<div className='flex lg:items-center items-start gap-2'>
+							<Check strokeWidth={4} size={22} />
+							<span>Pedidos no WhatsApp com atendente virtual</span>
+						</div>
 
-					<div className='flex flex-col sm:flex-row gap-4 justify-center items-center pt-4'>
+						<div className='flex lg:items-center items-start gap-2'>
+							<Check strokeWidth={4} size={22} />
+							<span>Canal de vendas sem taxas e com link próprio</span>
+						</div>
+
+						<div className='flex lg:items-center items-start gap-2'>
+							<Check strokeWidth={4} size={22} />
+							<span>Atraia clientes com anúncios online</span>
+						</div>
+					</div>
+
+					<div className='flex flex-col sm:flex-row gap-4 justify-start items-center pt-4'>
 						<Button
 							size='lg'
-							className='bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all'
+							className='w-full sm:w-auto px-8 py-5 text-base md:text-lg'
 							onClick={scrollToForm}
 						>
-							Começar Agora <ArrowRight className='ml-2 h-5 w-5' />
+							Criar cardápio grátis <ArrowRight className='ml-2 h-5 w-5' />
 						</Button>
 						<Button
 							size='lg'
@@ -73,28 +84,14 @@ export const Hero = () => {
 							onClick={() =>
 								window.open('https://menu.dulivi.com.br/big-burger', '_blank')
 							}
-							className='border-2 border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg font-semibold rounded-xl'
+							className='w-full sm:w-auto px-8 py-5 text-base md:text-lg'
 						>
-							Ver Demonstração
+							Ver cardápio
 						</Button>
-					</div>
-
-					<div className='pt-8 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground font-semibold'>
-						<div className='flex items-center gap-2'>
-							<span className='text-2xl'>✅</span>
-							<span className=''>Sem instalação</span>
-						</div>
-						<div className='flex items-center gap-2'>
-							<span className='text-2xl'>⚡</span>
-							<span className=''>Ativo em 24h</span>
-						</div>
-						<div className='flex items-center gap-2'>
-							<span className='text-2xl'>🎯</span>
-							<span className=''>Suporte dedicado</span>
-						</div>
 					</div>
 				</div>
 			</div>
+			<img src='/dulivi.webp' className='w-full md:w-1/2' />
 		</section>
 	)
 }
