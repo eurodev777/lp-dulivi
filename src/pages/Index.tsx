@@ -9,6 +9,7 @@ import Team from '@/components/Team'
 import WhatsApp from '@/components/WhatsApp'
 import HeaderMenu from '@/components/HeaderMenu'
 import ContactPage from '@/components/ContactPage'
+import { Teste } from '@/components/Teste'
 
 const Index = () => {
 	return (

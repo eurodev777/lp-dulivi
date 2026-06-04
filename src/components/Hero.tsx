@@ -29,7 +29,7 @@ export const Hero = () => {
 	return (
 		<section
 			id='inicio'
-			className='relative max-w-6x mx-auto lg:min-h-screen flex lg:flex-row flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 py-20'
+			className='relative max-w-6x mx-auto lg:min-h-screen flex lg:flex-row flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 lg:py-12 py-20'
 		>
 			<div className='container mx-auto max-w-6xl relative z-10 lg:ml-32'>
 				<div className='text-start space-y-6 md:space-y-8 animate-fade-in'>
@@ -53,7 +53,7 @@ export const Hero = () => {
 						</span> */}
 					</h1>
 
-					<div className='flex flex-col justify-start items-start gap-1 text-lg md:text-xl text-[#1a1a1a]'>
+					<div className='flex flex-col justify-start items-start gap-2 md:text-lg text-[#1a1a1a]'>
 						<div className='flex lg:items-center items-start gap-2'>
 							<Check strokeWidth={4} size={22} />
 							<span>Pedidos no WhatsApp com atendente virtual</span>
@@ -66,7 +66,7 @@ export const Hero = () => {
 
 						<div className='flex lg:items-center items-start gap-2'>
 							<Check strokeWidth={4} size={22} />
-							<span>Atraia clientes com anúncios online</span>
+							<span>Atraia mais clientes com anúncios online</span>
 						</div>
 					</div>
 
