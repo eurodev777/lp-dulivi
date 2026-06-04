@@ -176,7 +176,7 @@ export default function HeaderMenu() {
 							onClick={() => scrollIntoView('contact-form')}
 							className='bg-[#1d84ff] cursor-pointer px-4 py-2 rounded-md text-white font-semibold text-sm relative overflow-hidden w-full'
 						>
-							Teste Grátis
+							Criar cardápio grátis
 							<span className='absolute top-[-2px] right-[-2px] text-[11px] leading-3 text-black bg-white/80 py-0.5 px-1.5 rounded-[4px] montserrat'>
 								15 dias
 							</span>
@@ -188,7 +188,7 @@ export default function HeaderMenu() {
 							className='px-4 py-1.5 rounded-md font-semibold text-black flex items-center justify-center gap-1 border-[1px] border-border w-full'
 						>
 							<UserRound size={16} strokeWidth={3} />
-							Login
+							Fazer login
 						</a>
 					</aside>
 				</div>
