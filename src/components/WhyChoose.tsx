@@ -42,13 +42,13 @@ export const WhyChoose = () => {
 						return (
 							<div
 								key={index}
-								className='text-center p-6 bg-card rounded-xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 animate-slide-up'
+								className='text-center p-5 bg-card rounded-xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 animate-slide-up'
 								style={{ animationDelay: `${index * 0.1}s` }}
 							>
 								<div className='inline-flex p-4 rounded-full bg-primary/10 text-primary mb-4'>
 									<Icon className='h-8 w-8' />
 								</div>
-								<h3 className='text-xl font-bold mb-2 text-foreground'>
+								<h3 className='text-xl lg:text-lg font-bold mb-2 text-foreground'>
 									{benefit.title}
 								</h3>
 								<p className='text-muted-foreground'>{benefit.description}</p>
