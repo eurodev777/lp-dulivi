@@ -91,7 +91,7 @@ export const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<img src='/dulivi.webp' className='w-full md:w-1/2' />
+			<img src='/dulivi-banner.png' className='w-full md:w-1/2' />
 		</section>
 	)
 }
