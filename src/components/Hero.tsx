@@ -29,9 +29,9 @@ export const Hero = () => {
 	return (
 		<section
 			id='inicio'
-			className='relative max-w-6x mx-auto lg:min-h-screen flex lg:flex-row flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 lg:py-12 py-20'
+			className='relative max-w-6x mx-auto lg:min-h-screen flex lg:flex-row flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 lg:py-12 py-20 px-6'
 		>
-			<div className='container mx-auto max-w-6xl relative z-10 lg:ml-32'>
+			<div className=' mx-auto max-w-6xl relative z-10 lg:ml-32'>
 				<div className='text-start space-y-6 md:space-y-8 animate-fade-in'>
 					<div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm border border-primary/20'>
 						<ConciergeBell className='h-4 w-4' />
@@ -91,7 +91,10 @@ export const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<img src='/dulivi-banner.png' className='w-full md:w-1/2' />
+			<img
+				src='/dulivi-banner.png'
+				className='w-full lg:w-5/12 mx-auto lg:mt-0 mt-12'
+			/>
 		</section>
 	)
 }
